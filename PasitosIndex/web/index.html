@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 150%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: yellow;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+
+
+      .img-container {
+        text-align: center;
+      }
+    </style>
+
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'yellow')" id="defaultOpen">Inicio</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" >Actividades</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Miembros</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">Voluntarios</button>
+
+<div id="Home" class="tabcontent">
+        <div>
+            
+            <img  src="Opción 2.png" alt="logo" width="273" height="244" align="middle">
+        </div>  
+        
+        <div>
+            <h1 style="color:black;">¿Quienes somos?</h1>
+
+            <p style="color:black;">Lorem Ipsum es simplemente el texto de relleno 
+                de las imprentas y archivos de texto. Lorem Ipsum 
+                ha sido el texto de relleno estándar de las industrias
+                desde el año 1500, cuando un impresor (N. del T. persona 
+                que se dedica a la imprenta) desconocido usó una galería 
+                de textos y los mezcló de tal manera que logró hacer un 
+                libro de textos especimen. No sólo sobrevivió 500 años, 
+                sino que tambien ingresó como texto de relleno en documentos 
+                electrónicos, quedando esencialmente igual al original. 
+                Fue popularizado en los 60s con la creación de las hojas 
+                "Letraset", las cuales contenian pasajes de Lorem Ipsum, 
+                y más recientemente con software de autoedición, como 
+                por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+        </div>
+       
+        <div align="right">
+            <h1 style="color:black;">Vision</h1>
+            <p style="color:black;">Ser una organización exitosa en la implementación de programas 
+                que apoyen, mediante la facilitación de oportunidades e incentivos, 
+                el desarrollo académico de los estudiantes de educación básica 
+                en escuelas carentes de recursos y con deficiencias acentuadas 
+                en el rendimiento.
+            
+                <br><br><br>
+            
+            </p>
+        </div>
+        <div>
+            <h1 style="color:black;">Mision</h1>
+            <p style="color:black;">Mejorar el desempeño académico y el nivel de aprendizaje de los 
+                estudiantes de educación básica pertenecientes a las escuelas 
+                públicas cercanas a ESEN.</p>
+        </div>
+        
+        <div align="right">
+            <h1>Sign In</h1>
+            <form action="" method="get">
+             Usuario: <input type="text" name="usuario" />
+            <br><br>
+            Contraseña: <input type="text" name="contraseña" />
+            <br><br>
+            <input type="submit" name="mysubmit" value="Ingresar" />
+            </form>
+        </div>
+        <div align="left">
+            <h2>Contacto: Fulanito equis</h2>
+            <h2>Numero Telefonico: 34343434</h2>
+            <h2>Correo: fulanito@hotmail.com</h2>
+        </div>
+        
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 

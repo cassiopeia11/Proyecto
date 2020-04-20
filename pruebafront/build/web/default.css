@@ -1,0 +1,327 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #3D3D3D;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #6c6c6c
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #454445;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+strong
+{
+}
+
+a
+{
+	color: #2C383B;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+
+
+
+	#header-wrapper
+	{
+		overflow: hidden;
+		padding: 5em 0em 0em 0em;
+		background: #1ABC9C 
+	}
+
+	#header
+	{
+	}
+
+#triangle-down {
+	margin: 0 auto;
+	width: 0;
+	height: 0;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+	border-bottom: 30px solid #3D3D3D;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+	#logo
+	{
+		padding: 5em 0em;
+		text-align: center;
+	}
+	
+	#logo h1
+	{
+		font-size: 3.5em;
+	}
+	
+	#logo a
+	{
+		text-decoration: none;
+		color: #FFF;
+	}
+	
+	#logo span
+	{
+		letter-spacing: 0.10em;
+		text-transform: uppercase;
+		font-size: 0.90em;
+		color: rgba(255,255,255,0.5);
+	}
+
+	#logo span a
+	{
+		color: rgba(255,255,255,0.8);
+	}
+	
+	#logo .icon
+	{
+		font-size: 4em;
+		color: rgba(255,255,255,1);
+	}
+	
+	
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+	#menu-wrapper
+	{
+		background: #3D3D3D;
+	}
+
+	#menu
+	{
+		margin: 0px auto;
+	}
+	
+	#menu ul
+	{
+		text-align: center;
+	}
+	
+	#menu li
+	{
+		display: inline-block;
+	}
+	
+	#menu li a, #menu li span
+	{
+		display: inline-block;
+		margin-left: 0.50em;
+		padding: 2em 1.5em 1em 1.5em;
+		letter-spacing: 0.20em;
+		text-decoration: none;
+		font-size: 0.90em;
+		font-weight: 600;
+		text-transform: uppercase;
+		outline: 0;
+		color: #FFF;
+	}
+	
+	#menu li:hover a, #menu li.active a, #menu li.active span
+	{
+	}
+	
+	#menu .current_page_item a
+	{
+		color: #FFF;
+	}
+
+
+
+
+
+#content
+{
+	padding: 0em 7em;
+}
+
+
+
+
+#parteabajo
+{
+	overflow: hidden;
+	padding: 5em 0em;
+	border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+#parteabajo p
+{
+	letter-spacing: 0.20em;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.80em;
+	color: rgba(255,255,255,0.3);
+}
+
+#parteabajo a
+{
+	text-decoration: none;
+	color: rgba(255,255,255,0.6);
+}
+
+
+
+#featured-wrapper
+{
+	overflow: hidden;
+	padding: 10em 0em;
+	background: #D5D5D5;
+	text-align: center;
+}
+
+#featured
+{
+	overflow: hidden;
+}
+
+#featured .major
+{
+	overflow: hidden;
+	margin-bottom: 3em;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+#featured .major h2
+{
+	font-size: 3em;
+}
+
+
+#featured .title
+{
+	margin-bottom: 1.5em;
+	padding-bottom: 1.5em;
+	border-bottom: 1px solid #E3E3E3;
+}
+
+#featured .title h2
+{
+	font-size: 1.2em;
+}
+
+#featured h2
+{
+	text-align: center;
+}
+
+#featured .icon
+{
+	position: relative;
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	background: #2C383B;
+	margin: 0px auto 20px auto;
+	line-height:  150px;
+	font-size: 5em;
+	text-align: center;
+	color: #FFF;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+}
+
+td {
+  text-align: left;
+  padding: 8px;
+  
+}
+
+th {
+  background: #696969;
+  padding: 8px;
+  
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #1ABC9C;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  float: left;
+  
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
